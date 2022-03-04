@@ -1,0 +1,37 @@
+﻿@model Cart
+
+<table class="receipt">
+    <tbody>
+        <tr>
+            <th>Product Id</th>
+            <th>Product Name</th>
+            <th>Unit Price</th>
+            <th>Quantity</th>
+            <th>Extended Price</th>
+        </tr>
+        @foreach (var order in Model.OrderDetails.Values)
+        {
+            <tr>
+                <td>@order.ProductId</td>
+                <td>@order.Product.ProductName</td>
+                <td>@order.DecimalUnitPrice.ToString("F")</td>
+                <td>@order.Quantity</td>
+                <td>@order.ExtendedPrice.ToString("F")</td>
+                <td>
+                    <a asp-controller="Cart" asp-action="RemoveOrder" asp-route-productId=@order.ProductId>remove</a>
+                </td>
+            </tr>
+        }
+        @if (Model.OrderDetails.Any())
+        {
+            <tr><td class="table-separator" colspan="6"></td></tr>
+        }
+        <tr>
+            <td></td>
+            <td>Subtotal:</td>
+            <td></td>
+            <td></td>
+            <td style="border-top: 5px">@Model.SubTotal.ToString("F")</td>
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,9 @@
+# directories
+**/bin/
+**/obj/
+**/app/
+
+# files
+Dockerfile*
+**/*.md
+.gitignore

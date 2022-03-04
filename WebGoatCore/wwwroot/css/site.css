@@ -1,0 +1,285 @@
+﻿html {
+    position: relative;
+    min-height: 100%;
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+body {
+    font-family: "Helvetica Neue", "Lucida Grande", "Segoe UI", Arial, Helvetica, Verdana, sans-serif;
+    color: #696969;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+    color: #0366d6;
+}
+
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.navbar {
+    padding: 4px 16px 4px 16px;
+}
+
+.border-top {
+    border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+a.nav-link.btn.btn-link.text-dark {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+
+table th {
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+table th, :not(.productTable tr) table tr {
+    text-align: center;
+}
+
+input[type=text] {
+    height: 25px;
+    padding: 0;
+}
+
+.validation-summary-errors {
+    font-size: 1.2em;
+    color: Red;
+}
+.validation-summary-errors ul {
+    list-style: none;
+    padding: 0;
+}
+.field-validation-error {
+    color: Red;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 1.5em;
+    color: #666666;
+    font-variant: small-caps;
+    text-transform: none;
+    font-weight: 200;
+    margin-bottom: 0px;
+}
+h1 {
+    font-size: 1.6em;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+h2 {
+    font-size: 1.5em;
+    font-weight: 600;
+}
+h3 {
+    font-size: 1.2em;
+}
+h4 {
+    font-size: 1.1em;
+}
+h5, h6 {
+    font-size: 1em;
+}
+
+/* Blog */
+div.blogEntryTitle {
+    font-size: 1.8em;
+    font-weight: bold;
+    padding: 10px 0px 5px 0px;
+    margin-bottom: 0px;
+}
+
+div.blogEntryContents {
+    padding: 0px 0px 5px 0px;
+}
+
+div.blogEntryAuthor {
+    font-size: 1.2em;
+}
+
+input.blogCreateTitleText {
+    width: 100%;
+}
+
+textarea.blogCreateContents {
+    width: 100%;
+    height: 10em;
+}
+
+textarea.BlogEntryReplyText {
+    width: 100%;
+    height: 10em;
+}
+
+div.blogResponseTitle {
+    font-size: 1.4em;
+    font-weight: bold;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+div.blogResponse {
+    padding: 5px 0px 10px 5px;
+    border-bottom: 1px solid #777;
+    border-top: 1px solid #777;
+    border-collapse: collapse;
+    margin: -1px 0 0 -1px;
+}
+
+div.blogResponseContents {
+    padding: 5px 0px 0px 0px; /* trbl */
+}
+
+
+/* Cart */
+table.receipt {
+    /* border: 1px solid; */
+    width: 70%;
+    padding: 4px;
+    
+}
+
+table.receipt .quantityInput {
+    width: 2.5em;
+    text-align: right;
+}
+
+
+/* Account info */
+div.viewAccountInfoDiv {
+    width: 100%;
+}
+
+div.viewAccountInfoDiv > div {
+    text-align: center;
+    padding: 5px 5px 5px 5px;
+}
+
+div.viewAccountInfoDiv > div {
+    width: 40%;
+    text-align: right;
+    margin: 5px 2px 5px 2px;
+    float: left;
+    font-weight: bold;
+}
+
+div.viewAccountInfoDiv > div:nth-child(even) {
+    width: 40%;
+    text-align: left;
+    margin: 5px 2px 5px 2px;
+    float: left;
+    font-weight: normal;
+}
+
+input.textEntry {
+    width: 320px;
+    border: 1px solid #ccc;
+}
+
+input.passwordEntry {
+    width: 320px;
+    border: 1px solid #ccc;
+}
+
+div.accountInfo {
+    width: 42%;
+}
+
+
+.clear {
+    clear: both;
+}
+
+
+fieldset {
+    margin: 1em 0px;
+    padding: 1em;
+    border: 1px solid #ccc;
+}
+fieldset p {
+    margin: 2px 8px 6px 10px;
+}
+fieldset label.inline {
+    display: inline;
+}
+legend {
+    font-size: 1.1em;
+    font-weight: 600;
+    padding: 2px 4px 0px 4px;
+    margin-bottom: 0px;
+    width: auto !important;
+}
+
+.productListItem figcaption {
+    text-align: right;
+}
+.productListItem figure {
+    display: inline-block;
+}
+.productListItem img {
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.table-separator {
+    width: 100%;
+    border-top: 2px solid #888;
+}
+
+table.receipt tr {
+    text-align: right;
+}
+
+table.receipt th {
+    text-align: center;
+}
+
+table.receipt td {
+    text-align: right;
+    padding: 10px;
+}
+
+img.logo {
+    width: 183px;
+    height: 54px;
+}

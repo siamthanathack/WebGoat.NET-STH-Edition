@@ -1,0 +1,39 @@
+﻿@model LoginViewModel
+
+@{
+    ViewData["Title"] = "Login";
+}
+
+
+<h2>
+    Log In
+</h2>
+<p>
+    Please enter your username and password.
+    <a asp-action="Register">Register</a>
+    if you don't have an account.
+</p>
+@using (Html.BeginForm(FormMethod.Post))
+{
+    @Html.HiddenFor(m => m.ReturnUrl)
+    <fieldset class="login">
+        @Html.ValidationSummary(true)
+        <p>
+            @Html.LabelFor(m => m.Username)
+            @Html.TextBoxFor(m => m.Username)
+            @Html.ValidationMessageFor(m => m.Username)
+        </p>
+        <p>
+            @Html.LabelFor(m => m.Password)
+            @Html.PasswordFor(m => m.Password)
+            @Html.ValidationMessageFor(m => m.Password)
+        </p>
+        <p>
+            @Html.CheckBoxFor(m => m.RememberMe)
+            @Html.LabelFor(m => m.RememberMe)
+        </p>
+    </fieldset>
+    <p class="submitButton">
+        <input type="submit" value="Log in" />
+    </p>
+}
